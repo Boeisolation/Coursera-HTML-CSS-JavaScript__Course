@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  /*margin-bottom: 15px;*/
+  text-align: center;
+  color: blueviolet;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma,  sans-serif;
+  font-size: 150%;
+}
+
+/*p {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}*/
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+.subtitle1{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: white;
+}
+
+.subtitle2{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: steelblue;
+    color: palevioletred;
+}
+
+.subtitle3{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: lightgray;
+    color: purple;
+}
+
+.content{
+    padding: 5px;
+    border: none;
+    background-color: whitesmoke;
+    font-family: Helvetica;
+    font-size: 150%;
+    color: black;
+    margin: 0px;
+    height: 200px;
+    overflow: auto;
+}
+
+
+section{
+  position: relative;
+  padding: 15px;
+  width: 100%;
+}
+
+div {
+  position: relative;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+p {
+  position: relative;
+  clear: right;
+}
+
+title {
+  position: relative;
+  width: 100%;
+  float: right;
+  border: 1px rebeccapurple;
+  position: relative;
+  margin-bottom: 15px;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4{
+    float: left;
+    border: 1px solid red;
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    border: 1px solid blue;
+    width: 50%;
+  }
+  .col-md-12 {
+    float: left;
+    border: 1px solid blue;
+    width: 100%;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+.col-sm-12 {
+    float: left;
+    border: 1px solid green;
+    width: 100%;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+<h1>---------------------Menu---------------------</h1>
+
+<section class="col-lg-4 col-md-6 col-sm-12">
+  
+  <div>  
+    <p class = "subtitle1">Chicken</p>
+    <p class = "content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
+  </div>
+
+</section> 
+
+<section class="col-lg-4 col-md-6 col-sm-12">
+  
+  <div>
+    <p class = "subtitle2">Beef</p>
+    <p class = "content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
+  </div>
+</section>
+
+<section class="col-lg-4 col-md-12 col-sm-12">
+  
+  <div>
+    <p class = "subtitle3">Sushi</p>
+    <p class = "content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
+  </div>
+</section>
+ 
+
+
+
+</body>
+</html>
